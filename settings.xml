@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="9d08f04f-b040-4fb7-9f16-d97e79ed2a28" created="3.3.0-AT" activeEnvironment="Default environment" name="Project 1" compositeProjectFormat="1.3" updated="3.3.0-AT" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="9d08f04f-b040-4fb7-9f16-d97e79ed2a28fileName">Project-1</con:setting>
+  </con:settings>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
+  <con:reporting/>
   <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to SoapUI Pro tests
