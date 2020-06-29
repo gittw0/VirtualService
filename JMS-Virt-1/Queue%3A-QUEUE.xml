@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation id="aeebbef7-11c7-46ca-bbb3-e6602aa6b8ab" name="Queue: QUEUE" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aeebbef7-11c7-46ca-bbb3-e6602aa6b8abfileName">Queue%3A-QUEUE</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:operationProperties>
+    <con:property>
+      <con:name>JmsDestination</con:name>
+      <con:value>jms://activeMQsession::-::queue_QUEUE</con:value>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse name="Response 1" id="30b88309-7e45-4695-864f-1d448ccf8635" dataSource="Data Source 1">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.messageAsString</con:name>
+        <con:value>${#MockResponse#DataProp}
+123</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.destination</con:name>
+        <con:value>jms://activeMQsession::queue_QUEUE::-</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.correlationId</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.type</con:name>
+        <con:value>TEXT</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.replyTo</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>false</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+      <con:property>
+        <con:name>DataProp</con:name>
+        <con:value>${DataProp}</con:value>
+      </con:property>
+      <con:property>
+        <con:name>DataProp2</con:name>
+        <con:value>${DataProp2}</con:value>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+</con:customOperation>

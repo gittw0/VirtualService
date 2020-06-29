@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="51109114-4f1d-4ee0-be89-8eac287220b2" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="51109114-4f1d-4ee0-be89-8eac287220b2fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="JMS" name="JMS Request" id="3b515066-42e9-4702-92eb-b5ec62d08be2">
+    <con:settings/>
+    <con:config service="Service 1" methodName="" resourcePath="/WCFREST/Service.svc/Vse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="JMS Request" id="a115f17f-84c8-4ce7-9d6c-30b0f08b22c8" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>jms://ActiveMQ::queue_QUEUE::queue_QUEUE</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:username>null</con:username>
+          <con:password>null</con:password>
+          <con:domain>null</con:domain>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <con:entry key="x" value="2"/>
+          <con:entry key="y" value="3"/>
+          <con:entry key="z" value="+"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>x</con:entry>
+          <con:entry>y</con:entry>
+          <con:entry>z</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="b771e1b5-6212-4a18-8dc7-931d1e1d9e4d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+            <con:username>null</con:username>
+            <con:password>null</con:password>
+            <con:domain>null</con:domain>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
