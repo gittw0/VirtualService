@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="71f15a1d-2774-42b6-9c54-e7d0e4354235fileName">JMS-Request-1</con:setting>
   </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
   <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
   <con:dispatchConfig/>
   <con:operationProperties>
