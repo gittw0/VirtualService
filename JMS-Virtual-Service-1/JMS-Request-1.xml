@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation id="71f15a1d-2774-42b6-9c54-e7d0e4354235" name="JMS Request 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="71f15a1d-2774-42b6-9c54-e7d0e4354235fileName">JMS-Request-1</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:operationProperties>
+    <con:property>
+      <con:name>JmsServer</con:name>
+      <con:value>JMS</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectorLabel</con:name>
+      <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>InitialContextFactory</con:name>
+      <con:value>org.apache.activemq.jndi.ActiveMQInitialContextFactory</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ProviderUrl</con:name>
+      <con:value>tcp://localhost:61616</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectionFactory</con:name>
+      <con:value>ConnectionFactory</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ReceiveDestinationJndiName</con:name>
+      <con:value>S1</con:value>
+    </con:property>
+    <con:property>
+      <con:name>SendDestinationJndiName</con:name>
+      <con:value>S2</con:value>
+    </con:property>
+    <con:property>
+      <con:name>UserName</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>Password</con:name>
+      <con:value/>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse name="Response 1" id="9c697568-5a3a-46f2-9750-d933452eaf4a">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.messageAsString</con:name>
+        <con:value>Some JMS TEXT</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.destination</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value>#ManualJmsConfiguration properties
+
+receiveDestinationJndiName=S1
+password=
+initialContextFactoryClass=org.apache.activemq.jndi.ActiveMQInitialContextFactory
+userName=
+connectionFactoryJndiName=ConnectionFactory
+providerUrl=tcp\://localhost\:61616
+sendDestinationJndiName=S2</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.correlationId</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.type</con:name>
+        <con:value>TEXT</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.replyTo</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>true</con:value>
+      </con:property>
+      <con:property>
+        <con:name>JmsServer</con:name>
+        <con:value>JMS</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+</con:customOperation>
