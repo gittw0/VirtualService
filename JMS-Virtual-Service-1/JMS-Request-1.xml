@@ -29,11 +29,11 @@
     </con:property>
     <con:property>
       <con:name>ReceiveDestinationJndiName</con:name>
-      <con:value>S1</con:value>
+      <con:value>S3</con:value>
     </con:property>
     <con:property>
       <con:name>SendDestinationJndiName</con:name>
-      <con:value>S2</con:value>
+      <con:value>S4</con:value>
     </con:property>
     <con:property>
       <con:name>UserName</con:name>
