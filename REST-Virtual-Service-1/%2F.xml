@@ -9,7 +9,7 @@
   <con:routeScript/>
   <con:response name="Response 1" mediaType="application/json" id="1297c5bd-3bf7-4fda-87d3-d9f86290c9a2" httpResponseStatus="200" dataSource="" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
     <con:settings/>
-    <con:responseContent>"_id": "5ef4923d26c87e41669ea8355",
+    <con:responseContent>{"_id": "5ef4923d26c87e41669ea8355",
     "index": 0,
     "guid": "507e1e03-a187-424c-a375-5ec9fc55da81",
     "isActive": false,
